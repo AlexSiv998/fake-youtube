@@ -8,7 +8,55 @@ body {
 }
 nav {
   display: flex;
+  justify-content: space-around;
+  padding: 0 16px;
 }
+
+#iconyou, #search, #notification, #perrito, #Principal, #Shorts, #Suscripciones, #Tu {
+  background-color: transparent;
+  color: beige;
+}
+
+#iconyou {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom-color: rgba(128, 128, 128, 0.304);
+  margin: 5px 0;
+}
+
+#search {
+  border-bottom-left-radius: 15px;
+}
+
+#iconsearch {
+  border-bottom-right-radius: 15px;
+}
+
+.derecha {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+#crear {
+  display: flex;
+}
+
+#iconsearch, #micro, #crear {
+  background-color: rgba(128, 128, 128, 0.304);
+  color: beige;
+}
+
+.search {
+  display: flex;
+}
+
+
 
 main > div {
   display: grid;
