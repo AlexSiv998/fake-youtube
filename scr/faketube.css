@@ -8,8 +8,10 @@ body {
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 16px;
+  font-size: 10px;
+  width: 100%;
 }
 
 #iconyou, #search, #notification, #perrito, #Principal, #Shorts, #Suscripciones, #Tu {
@@ -19,35 +21,67 @@ nav {
 
 #iconyou {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 26px;
+  margin: 16px 0;
+  padding: 0 16px ;
+}
+
+.izquierda {
+  display: flex;
+  width: 20%;
 }
 
 .center {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: center ;
+  justify-content: center;
+  gap: 15px;
+  font-size: 10px;
   border-bottom-color: rgba(128, 128, 128, 0.304);
-  margin: 5px 0;
+  margin: 0 0 0 40px;
+  padding: 0 4px;
+  width: 60%;
 }
 
 #search {
-  border-bottom-left-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px 0 0 15px;
+  padding: 0 4px 0 16px;
+  font-size: 16px;
+  width: 90%;
 }
 
 #iconsearch {
-  border-bottom-right-radius: 15px;
+  border-radius: 0 15px 15px 0;
+  padding: 5px;
+  width: 10%;
+}
+
+#micro {
+  display: flex;
+  border-radius: 100%;
+  margin: 0 0 0 10px;
+  font-size: 10px;
 }
 
 .derecha {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 20px;
+  width: 20%;
 }
 
 #crear {
   display: flex;
+  border-radius: 15px;
+  padding: 6px;
 }
 
-#iconsearch, #micro, #crear {
+
+#iconsearch, #micro, #crear, #barra {
   background-color: rgba(128, 128, 128, 0.304);
   color: beige;
 }
@@ -55,7 +89,6 @@ nav {
 .search {
   display: flex;
 }
-
 
 
 main > div {
