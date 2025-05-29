@@ -9,9 +9,16 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 16px;
   font-size: 10px;
-  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  position: sticky;
+  top: 45px;
 }
 
 #iconyou, #search, #notification, #perrito, #Principal, #Shorts, #Suscripciones, #Tu {
@@ -21,43 +28,43 @@ nav {
 
 #iconyou {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  height: 26px;
-  margin: 16px 0;
-  padding: 0 16px ;
+  height: 100%;
+  width: 100%;
 }
 
 .izquierda {
   display: flex;
-  width: 20%;
 }
 
 .center {
   display: flex;
-  align-items: center ;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   font-size: 10px;
   border-bottom-color: rgba(128, 128, 128, 0.304);
   margin: 0 0 0 40px;
   padding: 0 4px;
-  width: 60%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
 }
 
 #search {
   display: flex;
+  background-color: transparent;
   justify-content: space-between;
   border-radius: 15px 0 0 15px;
   padding: 0 4px 0 16px;
   font-size: 16px;
-  width: 90%;
 }
 
 #iconsearch {
   border-radius: 0 15px 15px 0;
   padding: 5px;
-  width: 10%;
 }
 
 #micro {
@@ -71,25 +78,52 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 20%;
 }
 
 #crear {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
-  padding: 6px;
+  padding: 5px;
+  margin: 3px;
+  gap: 10px;
+  height: 100%;
 }
 
+#perrito {
+  display: flex;
+  border-radius: 100%;
+  margin: 0 16px;
+  padding: 5px;
+}
 
-#iconsearch, #micro, #crear, #barra {
+#iconsearch, #micro, #crear, .bar {
   background-color: rgba(128, 128, 128, 0.304);
   color: beige;
 }
 
-.search {
+.bar-div {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+  gap: 20px;
+  
 }
 
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 12px 0 12px 0;
+  padding: 5px 12px;
+  font-size: 15px;;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+}
 
 main > div {
   display: grid;
@@ -103,4 +137,8 @@ main {
 
 main section {
   display: flex;
+}
+
+@media screen {
+  
 }
