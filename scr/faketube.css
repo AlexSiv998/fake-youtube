@@ -7,8 +7,9 @@ body {
   background-color: rgb(15, 13, 13);
 }
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-items: center;
   align-items: center;
   padding: 0 16px;
   font-size: 10px;
@@ -21,7 +22,7 @@ header {
   top: 45px;
 }
 
-#iconyou, #search, #notification, #perrito, #Principal, #Shorts, #Suscripciones, #Tu {
+#iconyou, #search, #notification, #perrito, #Principal, #Shorts, #Suscripciones, #Tu, #trebar {
   background-color: transparent;
   color: beige;
 }
@@ -35,6 +36,7 @@ header {
 
 .izquierda {
   display: flex;
+  gap: 10px;
 }
 
 .center {
@@ -46,6 +48,7 @@ header {
   border-bottom-color: rgba(128, 128, 128, 0.304);
   margin: 0 0 0 40px;
   padding: 0 4px;
+  width: 100%;
 }
 
 .search {
@@ -76,8 +79,9 @@ header {
 
 .derecha {
   display: flex;
+  justify-content: end;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 #crear {
@@ -86,15 +90,15 @@ header {
   align-items: center;
   border-radius: 15px;
   padding: 5px;
-  margin: 3px;
-  gap: 10px;
+  margin: 5px 3px;
+  gap: 5px;
   height: 100%;
 }
 
 #perrito {
   display: flex;
   border-radius: 100%;
-  margin: 0 16px;
+  margin: 0 16px 0 0;
   padding: 5px;
 }
 
@@ -137,6 +141,10 @@ main {
 
 main section {
   display: flex;
+}
+
+.sidebar {
+  display: none;
 }
 
 @media screen {
