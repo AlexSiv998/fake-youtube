@@ -1,3 +1,3 @@
 # fake youtube
 
-proyecto creado con fine educativos 
+proyecto creado con fines educativos 
