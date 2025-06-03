@@ -45,8 +45,9 @@ nav {
 #iconyou {
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  align-items: center;
+  height: 50%;
+  width: 50%;
 }
 
 #trebar {
@@ -57,6 +58,8 @@ nav {
 
 .izquierda {
   display: flex;
+  align-items: start;
+  justify-content: start;
   gap: 10px;
 }
 
@@ -207,13 +210,6 @@ aside> div {
   gap: 15px;
 }
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  p {
-    color: rgb(97, 190, 20)
-  }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
