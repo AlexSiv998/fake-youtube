@@ -172,7 +172,7 @@ aside> div {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  size: 10px;
+  size: 8px;
   padding: 0, 4px;
   position: fixed;
   left: 0;
@@ -182,7 +182,7 @@ aside> div {
 .sidebar {
   width: 90%;
   border-radius: 15px;
-  font-size: 10px;
+  font-size: 8px;
   padding: 7px;
 }
 
